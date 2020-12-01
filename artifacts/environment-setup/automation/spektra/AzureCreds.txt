@@ -1,6 +1,4 @@
 $azureUsername="AzureUserNameValue"
-$azurePassword="AzurePasswordValue"
-$AzureSQLPassword="AzurePasswordValue"
 $azureTenantID="AzureTenantIDValue"
 $azureSubscriptionID="AzureSubscriptionIDValue"
 $deploymentID="DeploymentIDValue"
