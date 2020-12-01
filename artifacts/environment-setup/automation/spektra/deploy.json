@@ -11,9 +11,6 @@
       "azureUsername": {
         "type": "string"
       },
-      "azurePassword": {
-        "type": "securestring"
-      },
       "odlId": {
         "type": "string"
       },
@@ -22,7 +19,7 @@
       }
     },
     "variables": {
-      "postInstallParameters": "[concat(' -azureUsername ', parameters('azureUsername'), ' -azurePassword ', parameters('azurePassword'), ' -azureTenantID ', variables('azureTenantID'), ' -azureSubscriptionID ', variables('azureSubscriptionID'), ' -odlId ', parameters('odlId'), ' -deploymentId ', parameters('deploymentId'))]",
+      "postInstallParameters": "[concat(' -azureUsername ', parameters('azureUsername'), ' -azureTenantID ', variables('azureTenantID'), ' -azureSubscriptionID ', variables('azureSubscriptionID'), ' -odlId ', parameters('odlId'), ' -deploymentId ', parameters('deploymentId'))]",
       "azureSubscriptionID": "[subscription().subscriptionId]",
       "azureTenantID": "[subscription().tenantId]",
       "rgName": "[resourceGroup().name]",
@@ -193,7 +190,7 @@
               "autoUpgradeMinorVersion": true,
               "settings": {
                 "fileUris": [
-                  "https://raw.githubusercontent.com/solliancenet/advanced-dotnet-workshop/master/artifacts/environment-setup/automation/spektra/post-install-script01.ps1"
+                  "https://raw.githubusercontent.com/akn9050/advanced-dotnet-workshop/master/artifacts/environment-setup/automation/spektra/post-install-script01.ps1"
                 ]
               },
               "protectedSettings": {
